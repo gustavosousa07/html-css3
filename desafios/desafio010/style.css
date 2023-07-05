@@ -1,0 +1,166 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+*{
+ font-family: Arial, Helvetica, sans-serif;
+ margin: 0;
+}
+body{
+    background-color: #84e1ad;
+
+}
+
+.tudo{
+    width: 800px;
+    background-color: white;
+    margin: auto; 
+    text-align: center;
+   
+}
+header{
+    width: 2000px;
+    text-align: center;
+}
+.cabecalho{
+ background-image: linear-gradient(to bottom, #3cd681, #1a5c38);
+}
+.cabecalho-titulo{
+  margin:auto;
+  color: white;
+  
+}
+.cabecalho-text{
+ color: white;
+ margin: auto;
+ margin-top: 25px;
+}
+.cabecalho-menu{
+
+    display: flex;
+    text-align: justify;
+    gap: 20px;
+    padding-left: 20px;
+    margin: 10px;
+}
+.cabecalho-menu-item{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.conteudo-principal-titulo{
+    font-family: 'idroid';
+    display: flex;
+    text-align: justify;
+    padding-left: 20px;
+    color: #236241;
+    font-size: 2em;
+    padding-top: 10px;
+}
+.conteudo-principal-text{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 5px;
+    line-height: 23px;
+    font-weight: 500;
+    margin: 10px;
+}
+.conteudo-principal-titulo-b{
+    font-family: 'idroid';
+    display: flex;
+    text-align: justify;
+    padding-left: 20px;
+    background-color: #2f8e5da3;
+    color: #236241;
+    margin-left: 10px;
+}
+.conteudo-principal-video{
+    height: 350px;
+    background-color: #025935;
+    padding-top: 5vh;
+
+}
+a{
+    font-weight: bolder;
+    color: #025940;
+    text-decoration: none;
+}
+.g{
+    color: white;
+
+}
+.final{
+    font-size: 13px;
+    color: white;
+    background-color: #025935;
+    font-style: italic;
+    height: 15px;
+    padding: 5px;
+    align-items: center;
+}
+ul{
+    text-align: left;
+    list-style: none;
+}
+#rodape{
+    
+   background-color: #c5ebd6;
+   border-radius: 10px  ;
+   height: 375px;
+   width: 775px;
+   margin: 10px 10px 10px 10px; 
+   box-shadow: 5px 5px 5px 5px #d7d7d7bb;
+}
+
+.titulo-rodape{
+   display: flex;
+  text-align: justify;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  background-color: #2fa866;
+  padding: 10px 10px;
+  font-size: medium;
+}
+
+.texto-inicial-rodape{
+    text-align: justify;
+    text-indent: 30px;
+    margin: 10px 10px ;
+}
+
+.listas{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.texto-final-um{
+    text-align: justify;
+    text-indent: 30px;
+    margin: 0px 10px 25px 10px;
+}
+.texto-final-dois{
+    text-align: justify;
+    text-indent: 30px;
+    margin: 0px 10px 25px 10px;
+}
+
+li::before{
+    content: '✔ ';
+}
+.elementos-lista{
+    text-decoration: underline;
+    color: black;
+    font-weight: normal;
+}
+.texto-final-tres{
+   display: flex;
+   text-align: justify;
+   text-indent: 30px;
+   margin: 25px 10px 20px 10px;
+}

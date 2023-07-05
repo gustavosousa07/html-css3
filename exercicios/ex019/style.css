@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(43, 43, 237);
+    font: 400 16px Arial ;
+    
+}
+h1{
+    color: blue;
+    background-color: rgba(59, 152, 152, 0.636);
+}
+h1#principal{
+    color: rgb(108, 108, 241);
+}
+.basico{
+    color: rgb(130, 232, 130);
+}
+.inter{
+    color: #e3e34dee;
+}
+.avan{
+    color: rgba(216, 37, 37, 0.703);
+}
