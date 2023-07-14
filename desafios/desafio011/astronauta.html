@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astronauta</title>
     <style>
+
         *{
             margin: 0;
             padding: 0;
+            border: 0;
         }
-        body{
-            background-image: url(espaco.jpg);
+        #cont{
+        background-image: url('espaco.jpg');
+        background-size: cover;
+        background-color: black;
+        position: relative;
+        height: 100vh;
         }
-        .astronauta{
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center ;
-            flex-direction: column;
+        #conteudo{
+        position: absolute;
+
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <img class="astronauta" src="astronauta.png" alt="">
+     <section id="cont">
+
+        <article id="conteudo">
+        <img src="astronauta.png" alt="astronauta">
+        </article>
+     </section>
+   
 </body>
 </html>
