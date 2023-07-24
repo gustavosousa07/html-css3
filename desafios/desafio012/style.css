@@ -25,9 +25,9 @@ header{
 }
 header > h1{
     font-family: var(--fonte2);
-    font-weight: 700;
     padding-top: 50px;
     text-transform: small-caps;
+    font-size: 7vw;
 }
 header > p{
     padding-bottom: 50px;
@@ -45,6 +45,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -57,7 +59,8 @@ section.imagem{
 }
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.227);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
  }
 footer{
     background-color: black;
