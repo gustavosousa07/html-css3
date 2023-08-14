@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 014</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        header{
+            background-color: gray;
+            color: white;
+            font-size: 1.5em;
+            font-family: 'Merriweather', serif;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+        h1{
+           text-align: justify;
+            padding: 40px 0px 30px 10px;
+            color: white;
+        }
+        .titulo-principal{
+            text-shadow: 1px 1px 10px black;
+            text-align: center;
+        }
+        .nav{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 0.8em;
+            margin: 5px;
+            text-align: left;
+            padding: 0px 10px 0px 10px;
+            
+        }
+        .nav:hover{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(194, 194, 194, 0.149);
+        }
+        main{
+            margin: auto;
+            min-width: 300px;
+            max-width: 900px;
+            background-color: lightgray;
+            padding: 30px 0px 20px 0px;
+            
+        }
+        .titulo-main{
+          
+          font-size: 2em;
+          background-image: linear-gradient(to right, gray, lightgray, white);
+          padding: 0px 0px 0px 5px;
+          margin: 10px 0px 10px 10px;
+        }
+        .texto1{
+            text-align: justify;
+            padding: 0px 10px 10px 10px ;
+        }
+        table{
+            margin: auto;
+            width: 500px;
+            height: 400px;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td,th{
+           border: 1px solid black;
+           padding: 10px;
+           text-align: center;
+        }
+        th{
+            background-color: gray;
+            color: white;
+        }
+        .mat{
+            background-color: white;
+            color: black;
+        }
+        .med{
+            text-align: justify;
+        }
+        footer{
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            
+        }
+        footer  a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+
+        }
+        footer a:hover{
+            text-decoration: underline;
+        }
+        .rodape{
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+      <header>
+        <h1 class="titulo-principal">Exemplo Tabelas</h1>
+        <nav>
+            <a class="nav" href="#">Home</a>
+            <a class="nav" href="#">Planilhas</a>
+            <a class="nav" href="#">Escola</a>
+            <a class="nav" href="#">Contato</a>
+        </nav>
+      </header>
+
+
+        <main>
+          <section>
+           <h1 class="titulo-main">Tabelas</h1>
+           <p class="texto1">As tabelas são usadas para organizar algumas informações ou dados. Da mesma forma que os gráficos, elas facilitam o entendimento, por meio de linhas e colunas que separam os dados. Sendo assim, são usadas para melhor visualização de informações em diversas áreas do conhecimento.</p>
+          </section>
+          <section>
+
+          </section>
+          <section>
+            <h1 class="titulo-main">Exemplo 1:</h1>
+              <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Áreas</th>
+                        <th rowspan="2">Disciplinas</th>
+                        <th colspan="2">Notas</th>
+                        <th rowspan="2">Média</th>
+                    </tr>
+                    <tr>
+                        <th>Nota1</th>
+                        <th>Nota2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="mat" rowspan="3">Exatas</th>
+                        <td>Matematica</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Física</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Biologia</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <th class="med" colspan="4">Média de Exatas</th>
+                        <th>0.0</th>
+                    </tr>
+                    <tr>
+                        <th class="mat" rowspan="2">Humanas</th>
+                        <td>Historia</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Geografia</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <th class="med" colspan="4 ">Media de Humanas</th>
+                        <th>0.0</th>
+                    </tr>
+                </tbody>
+              </table>
+          </section>
+          <section>
+            <h1 class="titulo-main">Exemplo 2:</h1>
+            <table >
+                <tr>
+                    <th>Nº</th>
+                    <th>Times</th>
+                    <th>Pontos</th>
+                </tr>
+                <tr>
+                    <th>1º</th>
+                    <td>Corinthians</td>
+                    <td>77pts</td>
+                </tr>
+                <tr>
+                    <th>2º</th>
+                    <td>Palmeiras</td>
+                    <td>75pts</td>
+                </tr>
+                <tr>
+                    <th>3º</th>
+                    <td>Flamengo</td>
+                    <td>72pts</td>
+                </tr>
+                <tr>
+                    <th>4º</th>
+                    <td>Grêmio</td>
+                    <td>69pts</td>
+                </tr>
+                <tr>
+                    <th>5º</th>
+                    <td>Botafogo</td>
+                    <td>65pts</td>
+                </tr>
+            </table>
+          </section>
+</main>
+<footer>
+    <p class="rodape">Site criado por <a href="https://github.com/gustavosousa07">Gustavo Sousa</a> orientado pelo <a href="#">CursoemVideo</a></p>
+</footer>
+</body>
+</html>
