@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            text-align: justify;
+        }
+        input{
+            height: 30px;
+            border-radius: 10px;
+            box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.567);
+            background-color: white;
+            border: 1px solid black;
+        }
+        input.but{
+            width: 250px;
+            height: 50px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome"> Nome: </label> 
+            <input type="text" name="nome" id="nome"></p>
+        <p><label for="isobrenome"> Sobrenome: </label>
+             <input type="text" name="Sobrenome" id="sobrenome"></p>
+        <p><input class="but" type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
