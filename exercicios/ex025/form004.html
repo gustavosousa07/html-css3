@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,700;1,400&display=swap');
+
+        body{
+            background-color: pink;
+            font-family: 'Lobster Two', cursive;
+            color: white;
+            font-weight: 700;
+            
+        }
+        fieldset{
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 3px 3px 5px rgba(255, 159, 255, 0.612);
+            border: 1px solid white;
+            font-size: 1.5em;
+        }
+
+        h1{
+            font-size: 3em;
+            text-shadow: 2px 5px 6px rgba(228, 78, 228, 0.727);
+        }
+       
+        div.img{
+            display: inline-flex;
+            width: 300px;
+            height: 300px;
+        }
+        img{
+           border-radius: 10px;
+           box-shadow: 2px 5px 10px rgba(255, 118, 141, 0.774);
+        }
+        fieldset#check{
+            font-size: 1em;
+        }
+        
+        .btn{
+          background-color: palevioletred;
+          border: 1px solid white;
+          color: white;
+          font-family: 'Lobster Two', cursive;
+          padding: 5px;
+          width: 100px;
+          height: 50px;
+          animation-delay: 5s;
+          animation-duration: 5sxx;
+          border-radius: 10px;
+          box-shadow: 2px 5px 10px rgba(228, 78, 228, 0.727);
+        }
+    </style>
+</head>
+<body>
+    <h1>Acesso coração do Gustavo!</h1>
+    <form action="formtex.html">
+
+        <fieldset>
+            <legend>Dados pessoais da dona</legend>
+            <p>
+                <label for="inome">Nome </label>
+                <input type="text" name="nome" id="inome" required="Gica" minlength="4" maxlength="20">
+            </p>
+            <p>
+                <label for="iemail">Email </label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="isen">Senha </label>
+                <input type="password" id="isen" required minlength="8" maxlength="8" pattern="giovanna" value="giovanna" placeholder="xxxxxxxx" > <br>
+                <input type="checkbox" onclick="mostrarOcultarSenha()" id="check"> Mostrar senha
+
+            </p>
+            <p>
+                <label for="ifone">Telefone </label>
+                <input type="tel" name="tel" id="ifone" autocomplete="tel" pattern="^\(\d{2}\)\d{4 5}-\d{4}$" required placeholder="(xx) xxxxx-xxxx">
+            </p>
+            <p>
+                <label for="ilin">Linda</label>
+                <input type="checkbox" name="linda" id="ilin" checked>
+            </p>
+            <p>
+                <label for="imar">Maravilhosa</label>
+                <input type="checkbox" name="mara" id="imar" checked>
+            </p>
+            <p>
+                <label for="ipec">Pecinha boa</label>
+                <input type="checkbox" name="pecinha" id="ipec" checked>
+            </p>
+            
+        </fieldset>
+        
+        <!--
+            Estudar mais sobre RegEx
+        -->
+        <p>
+            <input type="submit" value="Enviar" class="btn">
+            <input type="reset" value="Limpar" class="btn">
+        </p>
+    </form>
+    <script>
+        function mostrarOcultarSenha(){
+            var senha=document.getElementById("isen");
+            if (senha.type=="password") {
+                senha.type="text";
+            } else {
+                senha.type="password";
+            }
+
+        }
+    </script>
+</body>
+</html>
