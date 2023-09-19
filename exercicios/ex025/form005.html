@@ -12,15 +12,34 @@
             font-family: 'Lobster Two', cursive;
             color: white;
             font-weight: 700;
-            font-size: 1.5em;
+            
         }
         fieldset{
             border-radius: 20px;
             padding: 10px;
+            box-shadow: 3px 3px 5px rgba(255, 159, 255, 0.612);
+            border: 1px solid white;
+            font-size: 1.5em;
         }
+
         h1{
             font-size: 3em;
+            text-shadow: 2px 5px 6px rgba(228, 78, 228, 0.727);
         }
+       
+        div.img{
+            display: inline-flex;
+            width: 300px;
+            height: 300px;
+        }
+        img{
+           border-radius: 10px;
+           box-shadow: 2px 5px 10px rgba(255, 118, 141, 0.774);
+        }
+        fieldset#check{
+            font-size: 1em;
+        }
+        
         .btn{
           background-color: palevioletred;
           border: 1px solid white;
@@ -30,7 +49,9 @@
           width: 100px;
           height: 50px;
           animation-delay: 5s;
-          animation-duration: 5s;
+          animation-duration: 5sxx;
+          border-radius: 10px;
+          box-shadow: 2px 5px 10px rgba(228, 78, 228, 0.727);
         }
     </style>
 </head>
@@ -50,13 +71,29 @@
             </p>
             <p>
                 <label for="isen">Senha </label>
-                <input type="password" name="senha" id="isen" required minlength="8" maxlength="8">
+                <input type="password" id="isen" required minlength="8" maxlength="8" pattern="giovanna" value="giovanna" placeholder="xxxxxxxx" > <br>
+                <input type="checkbox" onclick="mostrarOcultarSenha()" id="check"> Mostrar senha
+
             </p>
             <p>
                 <label for="ifone">Telefone </label>
                 <input type="tel" name="tel" id="ifone" autocomplete="tel" pattern="^\(\d{2}\)\d{4 5}-\d{4}$" required placeholder="(xx) xxxxx-xxxx">
             </p>
+            <p>
+                <label for="ilin">Linda</label>
+                <input type="checkbox" name="linda" id="ilin" checked>
+            </p>
+            <p>
+                <label for="imar">Maravilhosa</label>
+                <input type="checkbox" name="mara" id="imar" checked>
+            </p>
+            <p>
+                <label for="ipec">Pecinha boa</label>
+                <input type="checkbox" name="pecinha" id="ipec" checked>
+            </p>
+            
         </fieldset>
+        
         <!--
             Estudar mais sobre RegEx
         -->
@@ -65,6 +102,16 @@
             <input type="reset" value="Limpar" class="btn">
         </p>
     </form>
+    <script>
+        function mostrarOcultarSenha(){
+            var senha=document.getElementById("isen");
+            if (senha.type=="password") {
+                senha.type="text";
+            } else {
+                senha.type="password";
+            }
 
+        }
+    </script>
 </body>
 </html>
